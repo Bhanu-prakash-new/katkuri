@@ -3,6 +3,7 @@ import { Router } from '@angular/router'
 
 import { PhotoService } from '../../services/photo.service'
 import { Photo } from '../../interfaces/Photo'
+import {photos} from './photos'
 
 @Component({
   selector: 'app-photos-list',
@@ -19,13 +20,14 @@ export class PhotosListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.photoService.getPhotos()
-      .subscribe(
-        res => {
-          this.photos = res;
-        },
-        err => console.log(err)
-      )
+    // this.photoService.getPhotos()
+    //   .subscribe(
+    //     res => {
+    //       this.photos = res;
+    //     },
+    //     err => console.log(err)
+    //   )
+    this.photos = photos;
   }
 
   selectedCard(id: string) {
