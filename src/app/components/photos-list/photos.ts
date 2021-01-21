@@ -2,7 +2,7 @@ export const photos=[
     {
         title: "Bangle 1",
         description: "Bangle 1",
-        imagePath: "1.jfif",
+        imagePath: "first.png",
     },
     {
         title: "Bangle 2",
